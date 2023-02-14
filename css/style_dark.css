@@ -33,7 +33,7 @@
 /* Start Variables */
 :root {
   --main-color: #0167ff;
-  --sec-color: #02a8f5;
+  --sec-color: #02a0f5;
 }
 /* End Variables */
 
@@ -242,7 +242,7 @@ header nav ul li a.nav-link.active::before {
 /* Start Home */
 .home {
   position: relative;
-  background: url(../preview_assets/images/reactspace2.jpg);
+  background-image: url(../preview_assets/images/reactspace2.png) !important;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

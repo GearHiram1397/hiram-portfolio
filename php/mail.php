@@ -15,10 +15,10 @@ $mail = new PHPMailer(true);
 try {
 
     $mail->isSMTP();                                     //Send using SMTP
-    $mail->Host       = 'smtp.theatomicprogrammer.com';                //Set the SMTP server to send through
+    $mail->Host       = 'smtp.gmail.com';                //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                            //Enable SMTP authentication
-    $mail->Username   = 'hlugo1397@theatomicprogrammer.com';              //SMTP username 
-    $mail->Password   = 'Hiram_1397_@';                 //SMTP password
+    $mail->Username   = 'hiram1397@gmail.com';              //SMTP username 
+    $mail->Password   = 'rcekqfeyrbazvpsa';                 //SMTP password
     $mail->SMTPSecure = "ssl";
     $mail->Port       = 465;
 

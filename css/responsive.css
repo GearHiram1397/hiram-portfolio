@@ -11,8 +11,19 @@
     .contact .contact-field .contact-info-field {
         border-right: 1px solid var(--main-color);
     }
+ 
+    .reviews .review-field .review-swiper-text .client-info .review-head img.text-slider-image {
+        height: 200px;
+        width: 200px;
+      
+    }
 }
 @media (max-width: 576px) {
+    .cv-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .home .home-text p.name {
         font-size: 30px;
     }
@@ -48,6 +59,12 @@
         margin-right: auto;
         margin-bottom: 30px;
     }
+
+    .cv-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .about .container .image::before,
     .about .container .image::after {
         display: none;
@@ -64,11 +81,27 @@
     .modal .modal-dialog .modal-content q {
         font-size: 15px !important;
     }
+    .reviews .review-field .review-swiper-text .client-info .review-head img.text-slider-image {
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
 }
 /* Medium */
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 
+    .reviews .review-field .review-swiper-text .client-info .review-head img.text-slider-image {
+       
+        height: 200px;
+        width: 200px;
+    }
+    .cv-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
 @media (max-width: 991px) {
     .main-heading h2 {
         font-size: 70px;
@@ -81,6 +114,11 @@
         max-height: 70vh;
         overflow: auto;
     }
+    .cv-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .about .about-content .about-info ul li {
         flex-basis: 100%;
     }
@@ -89,6 +127,8 @@
     }
     .reviews .review-field .review-swiper-text .client-info .review-head img.text-slider-image {
         display: block;
+        height: 200px;
+        width: 200px;
     }
     
 }
