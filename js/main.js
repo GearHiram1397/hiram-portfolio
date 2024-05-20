@@ -232,3 +232,25 @@ $(document).ready(function () {
     }
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle-btn');
+    const nav = document.querySelector('nav');
+  
+    menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('open');
+      menuToggle.classList.toggle('collapsed');
+    });
+  });
+  
+
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+  

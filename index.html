@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- - - - -->
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/cosmos-atom-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/preview_assets/images/atomlogo.png">
     <!-- - - - -->
     <!-- CSS Plugins -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -38,7 +39,8 @@
         <div class="load-splitter"></div>
         <div class="load-splitter"></div>
         <div class="loader">
-            <p class="text">Full Stack Software Engineer<span>.</span></p>
+            <p class="text">ATOMIC PROGRAMMER<span>.</span></p>
+            <img src="/preview_assets/images/atomlogo.png" style="width: 260px; margin-bottom: 20px;" alt="atom" />
             <div class="loading-bar">
                 <span></span>
             </div>
@@ -52,7 +54,7 @@
         <nav class="navbar w-100 navbar-expand-lg">
             <div class="container">
                 <a   href="https://github.com/GearHiram1397">
-                 <h2 style="color:#fff; "><b>THE ATOMIC PROGRAMMER</b> <i style="color: #02a0f5;" class="fab fa-react fa-spin"></i> </h2>  
+                 <img src="/preview_assets/images/atomic-bannerlogo.png" class="logobanner"/>  
                 </a>
                 <button class="navbar-toggler menu-toggle-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="header-nav-icon"></span>
@@ -91,6 +93,7 @@
         </nav>
     </header>
     <!-- End Header -->
+    <!-- Envuelve tu iframe en un div para el control de estilos -->
     <!-- Start Home -->
     <section class="home d-flex align-items-center" id="home">
         <div class="container">
@@ -102,8 +105,8 @@
                         <span>I&acute;m</span>
                         <span class="ah-words-wrapper">
                             <b class="is-visible">Software Engineer</b>
-                            <b>Startup Co-founder</b>
-                            <b>Entrepreneur</b>
+                            <b>UI UX Design</b>
+                            <b>RPA Expert</b>
                         </span>
                     </h1>
                 </div>
@@ -223,6 +226,21 @@
         </div>
     </section>
     <!-- End Services -->
+    <!-- Botón para abrir/cerrar el chatbot -->
+    <div class="chatbot-button" onclick="toggleChatbot()"><img src="/preview_assets/images/atomic logo.png" style="width: 70px;  border-radius: 50%; " alt="bot" ></div>
+
+    <!-- Contenedor del Chatbot -->
+    <div class="chatbot-container">
+        <iframe width="360" height="580" allow="microphone;"
+        src="https://console.dialogflow.com/api-client/demo/embedded/9e8e2dce-3eff-4aad-9ee1-eb2912274a21"></iframe>
+    </div>
+    <script>
+        function toggleChatbot() {
+          var chatbotContainer = document.querySelector('.chatbot-container');
+          chatbotContainer.classList.toggle('active');
+        }
+        </script>
+
     <!-- Start Resume -->
     <section class="resume section-padding" id="resume">
         <div class="container">
@@ -302,12 +320,373 @@
     <!-- End Resume -->
     <!-- Start Skills -->
     <section class="skills section-padding" id="skills">
+    <div class="container">
+        <div class="main-heading mx-auto">
+            <h2 class="main-head-animation">Skills</h2>
+            <span>My Skills</span>
+        </div>
+        <div class="skill-field mt-5 row" id="skillField">
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" alt="JavaScript" class="skill-icon">
+                    </a>
+                    <p class="skill-name">JavaScript</p>
+                    <p class="skill-description">Dynamic scripting language for web development.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" alt="TypeScript" class="skill-icon">
+                    </a>
+                    <p class="skill-name">TypeScript</p>
+                    <p class="skill-description">Typed superset of JavaScript enhancing development.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" alt="HTML5" class="skill-icon">
+                    </a>
+                    <p class="skill-name">HTML5</p>
+                    <p class="skill-description">Standard markup language for creating web pages.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" alt="React" class="skill-icon">
+                    </a>
+                    <p class="skill-name">React</p>
+                    <p class="skill-description">Library for building interactive user interfaces.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://php.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg" alt="PHP" class="skill-icon">
+                    </a>
+                    <p class="skill-name">PHP</p>
+                    <p class="skill-description">Server scripting language for web development.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" alt="CSS3" class="skill-icon">
+                    </a>
+                    <p class="skill-name">CSS3</p>
+                    <p class="skill-description">Style sheet language used for designing web pages.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" alt="SASS" class="skill-icon">
+                    </a>
+                    <p class="skill-name">SASS</p>
+                    <p class="skill-description">Preprocessor scripting language that is interpreted or compiled into CSS.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" alt="Bootstrap" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Bootstrap</p>
+                    <p class="skill-description">Popular CSS framework for responsive web design.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://mui.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg" alt="Material UI" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Material UI</p>
+                    <p class="skill-description">React components for faster and easier web development.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://redux.js.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg" alt="Redux" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Redux</p>
+                    <p class="skill-description">Predictable state container for JavaScript apps.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" alt="NodeJS" class="skill-icon">
+                    </a>
+                    <p class="skill-name">NodeJS</p>
+                    <p class="skill-description">JavaScript runtime built on Chrome's V8 engine.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" alt="C#" class="skill-icon">
+                    </a>
+                    <p class="skill-name">C#</p>
+                    <p class="skill-description">Modern object-oriented programming language for building robust applications.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://python.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" alt="Python" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Python</p>
+                    <p class="skill-description">High-level programming language for general-purpose programming.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://laravel.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/laravel-colored.svg" alt="Laravel" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Laravel</p>
+                    <p class="skill-description">PHP framework for web artisans.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" alt="MongoDB" class="skill-icon">
+                    </a>
+                    <p class="skill-name">MongoDB</p>
+                    <p class="skill-description">NoSQL database for modern applications.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" alt="MySQL" class="skill-icon">
+                    </a>
+                    <p class="skill-name">MySQL</p>
+                    <p class="skill-description">Open-source relational database management system.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" alt="PostgreSQL" class="skill-icon">
+                    </a>
+                    <p class="skill-name">PostgreSQL</p>
+                    <p class="skill-description">Advanced open-source relational database.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" alt="Firebase" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Firebase</p>
+                    <p class="skill-description">Platform for building mobile and web applications.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://aws.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored.svg" alt="AWS" class="skill-icon">
+                    </a>
+                    <p class="skill-name">AWS</p>
+                    <p class="skill-description">Cloud computing services by Amazon.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://cloud.google.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg" alt="Google Cloud" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Google Cloud</p>
+                    <p class="skill-description">Cloud computing services by Google.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://www.oracle.com/uk/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" alt="Oracle" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Oracle</p>
+                    <p class="skill-description">Integrated cloud applications and platform services.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://docker.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" alt="Docker" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Docker</p>
+                    <p class="skill-description">Platform for developing, shipping, and running applications in containers.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://java.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" alt="Java" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Java</p>
+                    <p class="skill-description">High-level programming language for building applications.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="skill-container text-center">
+                    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" alt="Git" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Git</p>
+                    <p class="skill-description">Version control system for tracking changes in source code.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" alt="Visual Studio Code" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Visual Studio Code</p>
+                    <p class="skill-description">Source-code editor made by Microsoft.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://figma.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" alt="Figma" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Figma</p>
+                    <p class="skill-description">Web-based graphics editing and user interface design app.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://www.sketch.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sketch-colored.svg" alt="Sketch" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Sketch</p>
+                    <p class="skill-description">Vector graphics editor for macOS.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://jquery.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" alt="jQuery" class="skill-icon">
+                    </a>
+                    <p class="skill-name">jQuery</p>
+                    <p class="skill-description">JavaScript library designed to simplify HTML DOM tree traversal and manipulation.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://babeljs.io/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/babel-colored.svg" alt="Babel" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Babel</p>
+                    <p class="skill-description">JavaScript compiler that converts ECMAScript 2015+ code into a backwards-compatible version.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://webpack.js.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webpack-colored.svg" alt="Webpack" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Webpack</p>
+                    <p class="skill-description">Open-source JavaScript module bundler.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" alt="Next.js" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Next.js</p>
+                    <p class="skill-description">React framework for production.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" alt="Tailwind CSS" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Tailwind CSS</p>
+                    <p class="skill-description">Utility-first CSS framework for rapid UI development.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://graphql.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg" alt="GraphQL" class="skill-icon">
+                    </a>
+                    <p class="skill-name">GraphQL</p>
+                    <p class="skill-description">Data query language for APIs.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-none skill-extra">
+                <div class="skill-container text-center">
+                    <a href="https://www.heroku.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg" alt="Heroku" class="skill-icon">
+                    </a>
+                    <p class="skill-name">Heroku</p>
+                    <p class="skill-description">Cloud platform as a service supporting several programming languages.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn main-btn" id="showMoreBtn">Show More</button>
+        </div>
+    </div>
+</section>
+    
+    <!-- <section class="skills section-padding" id="skills">
         <div class="container">
             <div class="main-heading mx-auto">
                 <h2 class="main-head-animation">Skills</h2>
                 <span>My Skills</span>
             </div>
             <div class="skill-field mt-5 row">
+                /></a><a href="https://www.github.com/GearHiram1397" target="_blank" rel="noreferrer"><img
+                    src="https://img.shields.io/github/followers/GearHiram1397?logo=github&style=for-the-badge&color=3382ed&labelColor=000000" /></a>
+                    
+                    ### Skills
+                    
+                    <p align="left">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="Javascript" /></a>
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="Typescript" /></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
+                    <a href="https://php.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg" width="36" height="36" alt="PHP" /></a>
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
+                    <a href="https://sass-lang.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg" width="36" height="36" alt="SASS" /></a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap" /></a>
+                    <a href="https://mui.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg" width="36" height="36" alt="Material UI" /></a>
+                    <a href="https://redux.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg" width="36" height="36" alt="Redux" /></a>
+                    <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
+                    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="csharp" /></a>
+                    <a href="https://python.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a>
+                    <a href="https://laravel.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/laravel-colored.svg" width="36" height="36" alt="Laravel" /></a>
+                    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" /></a>
+                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a>
+                    <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>
+                    <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="36" height="36" alt="Firebase" /></a>
+                    <a href="https://aws.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aws-colored.svg" width="36" height="36" alt="Aws" /></a>
+                    <a href="https://cloud.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/googlecloud-colored.svg" width="36" height="36" alt="GoogleCloud" /></a>
+                    <a href="https://www.oracle.com/uk/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg" width="36" height="36" alt="Oracle" /></a>
+                    <a href="https://docker.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="36" height="36" alt="Docker" /></a>
+                    <a href="https://java.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java" /></a>
+                    <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" /></a>
+                    <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="36" height="36" alt="VS" /></a>
+                    <a href="https://figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
+                    <a href="https://www.sketch.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sketch-colored.svg" width="36" height="36" alt="Sketch" /></a>
+                    <a href="https://jquery.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" width="36" height="36" alt="JQuery" /></a>
+                    <a href="https://babeljs.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/babel-colored.svg" width="36" height="36" alt="Babel" /></a>
+                    <a href="https://webpack.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webpack-colored.svg" width="36" height="36" alt="Webpack" /></a>
+                    <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="36" height="36" alt="Nextjs" /></a>
+                    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="TailWind" /></a>
+                    <a href="https://graphql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/graphql-colored.svg" width="36" height="36" alt="GraphQl" /></a>
+                    <a href="https://www.heroku.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg" width="36" height="36" alt="Heroku" /></a>
+                    </p>
                 <div class="skill-box col-12 col-lg-6">
                     
                     <div class="skill-piece">
@@ -399,7 +778,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Skills -->
     <!-- Start Projects -->
     <section class="portfolio section-padding" id="portfolio">
@@ -885,6 +1264,8 @@
                                     </div>
                                 </div>
                                 <q >Hiram is really atomic learner, very energetic with a nice spirit and dedication, I've taught Hiram in the full-stack development course at clever programmer, and he was one of the top front-end developers in my cohort, highly recommend him as a cornerstone in any team.</q>
+                                <br/>
+                                <br/>
                                 <br/>
                                 <br/>
                                 <p style="color: #1b1c1f">decoration: hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam deleniti reiciendis quam ad eaque impedit enim soluta ipsam et, at, optio delectus modi laudantium officiis? Placeat provident laudantium unde? </p>

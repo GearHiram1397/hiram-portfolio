@@ -476,3 +476,11 @@
     }) : "undefined" != typeof exports && null !== exports ? module.exports = m : window.Odometer = m
 }
 ).call(this);
+
+document.getElementById('showMoreBtn').addEventListener('click', function() {
+    var skillExtras = document.querySelectorAll('.skill-extra');
+    skillExtras.forEach(function(skill) {
+        skill.classList.remove('d-none');
+    });
+    this.style.display = 'none';
+});
