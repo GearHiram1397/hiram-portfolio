@@ -234,16 +234,27 @@ $(document).ready(function () {
 });
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle-btn');
-    const nav = document.querySelector('nav');
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.querySelector('.menu-toggle-btn');
+    const navCollapse = document.querySelector('#navbarSupportedContent');
   
-    menuToggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
-      menuToggle.classList.toggle('collapsed');
+    toggleBtn.addEventListener('click', function() {
+      navCollapse.classList.toggle('show');
+      toggleBtn.classList.toggle('collapsed');
+    });
+  
+    // Add hover event to change icon to X
+    toggleBtn.addEventListener('mouseover', function() {
+      if (!navCollapse.classList.contains('show')) {
+        toggleBtn.classList.add('hovered');
+      }
+    });
+  
+    toggleBtn.addEventListener('mouseout', function() {
+      toggleBtn.classList.remove('hovered');
     });
   });
-  
+   
 
   window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
@@ -254,3 +265,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   
+    const carouselElement = document.getElementById('blogCarousel');
+    const carousel = new bootstrap.Carousel(carouselElement, {
+        interval: 5000,  // 5000 milliseconds = 5 seconds
+        ride: 'carousel'
+    });
