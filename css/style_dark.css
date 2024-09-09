@@ -379,7 +379,7 @@ header nav ul li a.nav-link.active::before {
 .home .home-text {
   position: relative; /* Para asegurarte de que el texto esté encima del filtro */
   color: #fff;
-  z-index: 2;
+  z-index: 3;
 }
 .home .home-text p.intro {
   position: relative;
@@ -434,11 +434,13 @@ header nav ul li a.nav-link.active::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   border-radius: 50%;
   color: var(--main-color);
   margin: 0 5px;
   transition: 0.2s ease-in;
-  z-index: 10;
+  pointer-events: auto;
+  z-index: 4;
 }
 .home .home-text .home-social a:hover {
   background-color: var(--main-color);
@@ -1255,6 +1257,7 @@ header nav ul li a.nav-link.active::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border: 2px solid var(--sec-color);
