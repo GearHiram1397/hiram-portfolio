@@ -54,7 +54,7 @@
         <nav class="navbar w-100 navbar-expand-lg">
             <div class="container">
                 <a href="https://github.com/GearHiram1397">
-                    <img src="/preview_assets/images/atomic-bannerlogo.png" class="logobanner" />  
+                    <img src="/preview_assets/images/atomic-bannerlogo.png" alt="atomic" class="logobanner" />  
                 </a>
                 <button class="navbar-toggler menu-toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="header-nav-icon"></span>
@@ -98,6 +98,9 @@
     <!-- Envuelve tu iframe en un div para el control de estilos -->
     <!-- Start Home -->
     <section class="home d-flex align-items-center" id="home">
+        <!-- Add background image while keeping the original CSS -->
+        <img src="preview_assets/images/atomicbanner4.png" alt="background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
+    5
         <div class="container">
             <div class="home-text text-center text-md-start">
                 <p class="intro mx-auto mx-md-0">Hello</p>
@@ -107,7 +110,7 @@
                         <span>I&acute;m</span>
                         <span class="ah-words-wrapper">
                             <b class="is-visible">Software Engineer</b>
-                            <b>UI/UX Design</b>
+                            <b>UI/UX Designer</b>
                             <b>RPA Expert</b>
                             <b>Mobile Developer</b>
                         </span>
@@ -1318,7 +1321,7 @@
                 </div>
                 <div class="mix react prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="9">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="React: Messenger Clone" href="./preview_assets/images/projectpic/messengerclone.jpg">
-                        <img class="img-fluid w-100 d-block" style="height: 325px;" src="./preview_assets/images/messenger.jpg" alt="portfolio">
+                        <img class="img-fluid w-100 d-block" style="height: 325px; object-fit: cover;" src="./preview_assets/images/messenger.jpg" alt="portfolio">
                         <div class="port-disc">
                             <span></span>
                             <span></span>
@@ -1367,9 +1370,25 @@
                         <a href="https://ms-counsulting-group-portfolio.vercel.app/" class="main-btn">Live Page</a>
                     </div>
                 </div>
+                <div class="mix fulls prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                    <a data-fancybox="gallery" class="d-block position-relative" data-caption="Full-Stack: Office of Legal Affairs - Case Management System" href="./preview_assets/images/projectpic/oal-cms.png">
+                        <img class="img-fluid w-100 d-block" style="height: 325px; object-fit: contain; background-color: #2E6069;" src="./preview_assets/images/projectpic/escudo-sanjuan.png" alt="cms">
+                        <div class="port-disc">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <i class="fas fa-search-plus"></i>
+                            <h4>OAL - Case Management System</h4>
+                            <p class="type mb-0">Full-Stack</p>
+                        </div>
+                    </a>
+                    <div class="more-projects text-center mt-4 pt-2">
+                        <a href="https://orange-water-0cf33910f.5.azurestaticapps.net/signin" class="main-btn">Live Page</a>
+                    </div>
+                </div>
             </div>
-        </div>
-       
+        </div> 
     </section>
     <!-- End Projects -->
     <!-- Start Counter -->
@@ -1377,29 +1396,27 @@
         <div class="container">
             <div class="row counter-area">
                 <div class="wow fadeInLeft col-12 col-lg-3 col-md-6 text-center">
-                    <i class="far fa-hand-rock d-block mb-2"></i>
-                    <span class="odometer" data-count="100">00</span>
-                    <h4>Eager to learn new skills</h4>
+                    <i class="fas fa-code d-block mb-2"></i>
+                    <span class="odometer" data-count="28">00</span>
+                    <h4>Projects Completed</h4>
                 </div>       
                 <div class="wow fadeInLeft col-12 col-lg-3 col-md-6 text-center" data-wow-delay="0.3s">
-                    <i class="far fa-handshake d-block mb-2"></i>
-                    <span class="odometer" data-count="100">00</span>
-                    <h4>Eager to work on teams</h4>
+                    <i class="fas fa-certificate d-block mb-2"></i>
+                    <span class="odometer" data-count="32">00</span>
+                    <h4>Certifications</h4>
                 </div>
                 <div class="wow fadeInLeft col-12 col-lg-3 col-md-6 text-center" data-wow-delay="0.6s">
-                    <i class="far fa-smile-beam d-block mb-2"></i>
-                    <span class="odometer" data-count="100">00</span>
-                    <h4>Motivation</h4>
+                    <i class="fas fa-laptop-code d-block mb-2"></i>
+                    <span class="odometer" data-count="49">00</span>
+                    <h4>Technologies Mastered</h4>
                 </div>
                 <div class="wow fadeInLeft col-12 col-lg-3 col-md-6 text-center" data-wow-delay="0.9s">
-                    <i class="fas fa-award d-block mb-2"></i>
-                    <span class="odometer" data-count="100">00</span>
-                    <h4>Wanting to achieve great things</h4>
+                    <i class="fas fa-clock d-block mb-2"></i>
+                    <span class="odometer" data-count="3">00</span>
+                    <h4>Years Experience</h4>
                 </div>
             </div>
-            
         </div>
-        
     </section>
     <!-- End Counter -->
     
@@ -1564,7 +1581,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="13">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Cisco: Packet Tracer" href="./preview_assets/images/projectpic/cert/terraform.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/terraform.png" alt="portfolio">
                         <div class="port-disc">
@@ -1577,7 +1594,7 @@
                     </a>
                 </div>
                 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="14">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: Project Management" href="./preview_assets/images/projectpic/cert/py0.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/py0.png" alt="portfolio">
                         <div class="port-disc">
@@ -1590,7 +1607,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="15">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: Project Management" href="./preview_assets/images/projectpic/cert/py1.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/py1.png" alt="portfolio">
                         <div class="port-disc">
@@ -1603,7 +1620,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="16">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: Project Management" href="./preview_assets/images/projectpic/cert/py2.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/py2.png" alt="portfolio">
                         <div class="port-disc">
@@ -1616,7 +1633,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="17">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: Project Management" href="./preview_assets/images/projectpic/cert/py3.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/py3.png" alt="portfolio">
                         <div class="port-disc">
@@ -1629,7 +1646,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="18">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: Project Management" href="./preview_assets/images/projectpic/cert/py4.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/py4.png" alt="portfolio">
                         <div class="port-disc">
@@ -1642,7 +1659,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="19">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: Project Management" href="./preview_assets/images/projectpic/cert/py5.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/py5.png" alt="portfolio">
                         <div class="port-disc">
@@ -1655,7 +1672,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="20">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: Project Management" href="./preview_assets/images/projectpic/cert/py6.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/py6.png" alt="portfolio">
                         <div class="port-disc">
@@ -1668,7 +1685,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="21">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: UX Design" href="./preview_assets/images/projectpic/cert/ux0.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/ux0.png" alt="portfolio">
                         <div class="port-disc">
@@ -1707,7 +1724,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="22">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: UX Design" href="./preview_assets/images/projectpic/cert/ux3.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/ux3.png" alt="portfolio">
                         <div class="port-disc">
@@ -1720,7 +1737,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="23">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: UX Design" href="./preview_assets/images/projectpic/cert/ux4.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/ux4.png" alt="portfolio">
                         <div class="port-disc">
@@ -1733,7 +1750,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="24">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: UX Design" href="./preview_assets/images/projectpic/cert/ux5.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/ux5.png" alt="portfolio">
                         <div class="port-disc">
@@ -1746,7 +1763,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="25">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: UX Design" href="./preview_assets/images/projectpic/cert/ux6.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/ux6.png" alt="portfolio">
                         <div class="port-disc">
@@ -1759,7 +1776,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="26">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Google: UX Design" href="./preview_assets/images/projectpic/cert/ux7.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/ux7.png" alt="portfolio">
                         <div class="port-disc">
@@ -1772,7 +1789,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="27">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Robocorp: Robotic Process Automation" href="./preview_assets/images/projectpic/cert/robot1.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/robot1.png" alt="portfolio">
                         <div class="port-disc">
@@ -1785,7 +1802,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="28">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Robocorp: Robotic Process Automation" href="./preview_assets/images/projectpic/cert/robot2.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/robot2.png" alt="portfolio">
                         <div class="port-disc">
@@ -1798,7 +1815,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="29">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Robocorp: Robotic Process Automation" href="./preview_assets/images/projectpic/cert/robot3.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/robot3.png" alt="portfolio">
                         <div class="port-disc">
@@ -1811,7 +1828,7 @@
                     </a>
                 </div>
 
-                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="12">
+                <div class="mix cisco prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="30">
                     <a data-fancybox="gallery" class="d-block position-relative" data-caption="Robocorp: Robotic Process Automation" href="./preview_assets/images/projectpic/cert/robot4.png">
                         <img class="img-fluid w-100 d-block"  src="./preview_assets/images/projectpic/cert/robot5.png" alt="portfolio">
                         <div class="port-disc">
@@ -1838,13 +1855,13 @@
                 <div class="wow bounceInUp review-swiper-image col-3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide px-0">
-                            <img class="img-fluid w-100"  style="height: 280px;" src="./preview_assets/images/victor.jpg">
+                            <img class="img-fluid w-100"  style="height: 280px;" alt="victor" src="./preview_assets/images/victor.jpg">
                         </div>
                         <div class="swiper-slide px-0">
-                            <img class="img-fluid w-100"  style="height: 280px;" src="./preview_assets/images/ahmad.jpg">
+                            <img class="img-fluid w-100"  style="height: 280px;" alt="ahmad" src="./preview_assets/images/ahmad.jpg">
                         </div>
                         <div class="swiper-slide px-0">
-                            <img class="img-fluid w-100"  style="height: 280px;" src="./preview_assets/images/aboutmary.jpg">
+                            <img class="img-fluid w-100"  style="height: 280px;" alt="mary" src="./preview_assets/images/aboutmary.jpg">
                         </div>
                     </div>
                 </div>
@@ -1853,7 +1870,7 @@
                         <div class="swiper-slide px-0">
                             <div class="client-info">
                                 <div class="review-head py-4">
-                                    <img class="text-slider-image mx-auto"   src="./preview_assets/images/victor.jpg">
+                                    <img class="text-slider-image mx-auto" alt="victor" src="./preview_assets/images/victor.jpg">
                                     <div class="rev-box d-flex align-items-center justify-content-lg-start justify-content-center">
                                         <i class="fas fa-quote-left pe-3 pt-2"></i>
                                         <div class="review-details">
@@ -1878,7 +1895,7 @@
                         <div class="swiper-slide px-0">
                             <div class="client-info">
                                 <div class="review-head py-4">
-                                    <img class="text-slider-image mx-auto"   src="./preview_assets/images/ahmad.jpg">
+                                    <img class="text-slider-image mx-auto" alt="ahmad" src="./preview_assets/images/ahmad.jpg">
                                     <div class="rev-box d-flex align-items-center justify-content-lg-start justify-content-center">
                                         <i class="fas fa-quote-left pe-3 pt-2"></i>
                                         <div class="review-details">
@@ -1909,7 +1926,7 @@
                         <div class="swiper-slide px-0">
                             <div class="client-info">
                                 <div class="review-head py-4">
-                                    <img class="text-slider-image mx-auto"   src="./preview_assets/images/aboutmary.jpg">
+                                    <img class="text-slider-image mx-auto" alt="mary" src="./preview_assets/images/aboutmary.jpg">
                                     <div class="rev-box d-flex align-items-center justify-content-lg-start justify-content-center">
                                         <i class="fas fa-quote-left pe-3 pt-2"></i>
                                         <div class="review-details">
@@ -2092,7 +2109,7 @@
     <!-- Start Footer -->
     <footer>
         <div class="container position-relative d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <p class="copy mb-2 mb-md-0">&copy; 2021 theatomicprogrammer , All Right Reserved</p>
+            <p class="copy mb-2 mb-md-0">&copy; 2021 theatomicprogrammer,  All Right Reserved</p>
             <div class="addition-links">
                 <a href="https://github.com/GearHiram1397">Privacy Policy</a>
                 <span></span>
