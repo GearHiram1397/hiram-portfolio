@@ -24,8 +24,8 @@
 
 /* Start Variables */
 :root {
-  --sec-color: #0588fb;
-  --main-color: #089ffd;
+  --sec-color: #089ffd;
+  --main-color: #155dfc;
 }
 
 
@@ -126,7 +126,7 @@ body {
   position: relative;
   font-family: "PT Sans", sans-serif;
   overflow-x: hidden;
-  background-color: #010109;
+  background-color: oklch(0.129 0.042 264.695);
   padding-top: 90px;
 }
 /* End Global */
@@ -143,7 +143,7 @@ header {
   display: flex !important;
   align-items: center;
   justify-content: space-between;
-  background-color: #010109;
+  background-color: oklch(0.129 0.042 264.695); 
   width: 100%;
   height: 85px;
   z-index: 1000;
@@ -286,7 +286,7 @@ header nav ul li a.nav-link.active::before {
     width: 100%;
     z-index: 1000;
     height: 55px;
-    background-color: #040409;
+    background-color: oklch(0.129 0.042 264.695);
   }
 
   .logobanner {
@@ -307,7 +307,7 @@ header nav ul li a.nav-link.active::before {
     left: -200px; /* Reduce the width */
     width: 200px; /* Reduce the width */
     height: 100%;
-    background-color: #040409;
+    background-color: oklch(0.129 0.042 264.695);
     transition: left 0.3s ease-in-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add box shadow */
   }
@@ -462,7 +462,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start About */
 .about {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .about .container .image {
   position: relative;
@@ -563,7 +563,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Services */
 .services {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 
 .services .services-field .serv-cont {
@@ -622,7 +622,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Resume */
 .resume {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .resume .resume-field .resume-content {
   position: relative;
@@ -708,7 +708,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Sills */
 .skills {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .skills .skill-field .skill-piece {
   margin-bottom: 30px;
@@ -773,7 +773,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Portfolio */
 .portfolio {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .portfolio .prog-filter {
   padding: 10px 0;
@@ -916,7 +916,7 @@ header nav ul li a.nav-link.active::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
   z-index: -1;
 }
 .counter .counter-area i {
@@ -939,7 +939,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Reviews */
 .reviews {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .reviews .review-field .review-swiper-image {
   overflow: hidden;
@@ -1028,7 +1028,7 @@ header nav ul li a.nav-link.active::before {
 }
 .reviews .review-field .review-swiper-text .swiper-slide {
   position: relative;
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .reviews .review-field .review-swiper-text .swiper-pagination {
   position: absolute;
@@ -1097,7 +1097,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Blog */
 .blog {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .blog .blog-field {
   color: #fff;
@@ -1133,7 +1133,7 @@ header nav ul li a.nav-link.active::before {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
   padding: 0 5px 0 15px;
   line-height: 40px;
   border: none;
@@ -1193,7 +1193,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Contact */
 .contact {
-  background-color: #040409;
+  background-color: oklch(0.129 0.042 264.695);
 }
 .contact .contact-field {
   background-color: #040409;
@@ -1300,7 +1300,7 @@ header nav ul li a.nav-link.active::before {
 
 /* Start Footer */
 footer {
-  background-color: #010109;
+  background-color: oklch(0.129 0.042 264.695);
   color: #aaa;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1536,7 +1536,7 @@ footer a.scroll-top {
   position: fixed;
   width: 50%;
   height: 100%;
-  background-color: #010109;
+  background-color: oklch(0.129 0.042 264.695);
   transition: 0.75s ease;
   transition-delay: 0.75s;
   z-index: 99999;
@@ -1602,7 +1602,7 @@ html::-webkit-scrollbar {
   width: 8px;
 }
 html::-webkit-scrollbar-track {
-  background: #010109;
+  background: oklch(0.129 0.042 264.695);
 }
 html::-webkit-scrollbar-thumb {
   background: var(--main-color);
@@ -1665,7 +1665,7 @@ html::-webkit-scrollbar-thumb {
   height: 65px;
   border-radius: 50%;
   padding: 10px;
-  background-color: #010109;
+  background-color: oklch(0.129 0.042 264.695);
   transition: background-color 0.3s ease;
 }
 
